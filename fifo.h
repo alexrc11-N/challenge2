@@ -7,7 +7,7 @@
  * push, pull, peek, and check if the queue is empty.
  * 
  */
-#ifndef HASH_H
+#ifndef HAS_H
 #define HASH_H
 
 #include <string>
