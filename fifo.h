@@ -7,18 +7,18 @@
  * push, pull, peek, and check if the queue is empty.
  * 
  */
-#ifndef HAS_H
-#define HASH_H
+#ifndef FIFO_H
+#define FIFO_H
 
 #include <string>
 
-// Estructura para datos
+// Data structure
 struct Data {
     int id;
     std::string information;
 };
 
-// Nodo para la lista enlazada
+// Node for linked list
 struct Node {
     Data data;
     Node* next;
@@ -39,4 +39,4 @@ private:
     Node* tail;
 };
 
-#endif // HASH_H
+#endif // FIFO_H
