@@ -15,7 +15,7 @@
 #define MAXSTRSIZE 20  
 
 #include <iostream> /* cout, endl */
-#include "fifo.h"
+#include "hash.h"
 
 using std::cout;
 using std::endl;
