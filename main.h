@@ -4,8 +4,8 @@
  *  
  *Contains all the values necessary to run main.cpp correctly.
  */
-#ifndef FIFO_MAIN_H
-#define FIFO_MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #define VALID_STACKSIZE 5
 #define LOWERBOUND 1
@@ -22,4 +22,4 @@ using std::endl;
 using std::string;
 using std::stoi;
 
-#endif /* FIFO_MAIN_H */
+#endif /* MAIN_H */
