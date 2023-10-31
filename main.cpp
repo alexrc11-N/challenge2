@@ -2,7 +2,7 @@
  * Author: Alex Rosado
  *  Challenge 2
  * 
- * test hash to test its functionality
+ * test hash and its functionality. along with all its applications and functions
  */
 #include "main.h"
 
