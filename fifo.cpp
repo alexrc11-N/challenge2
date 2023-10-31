@@ -7,7 +7,7 @@
  * operations such as push, pull, peek, and checking if the queue is empty.
  * 
  */
-#include "hash.h"
+#include "fifo.h"
 
 FIFO::FIFO() : head(nullptr), tail(nullptr) {}
 
