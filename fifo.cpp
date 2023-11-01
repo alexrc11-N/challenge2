@@ -62,7 +62,6 @@ bool FIFO::peek(Data& passedData) const {
     return result;
 }
 
-}
 
 bool FIFO::isEmpty() const {
     return !head;
