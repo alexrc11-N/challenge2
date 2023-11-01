@@ -32,29 +32,36 @@ bool FIFO::push(int id, const std::string& data) {
 }
 
 bool FIFO::pull(Data& passedData) {
-    if (!head) {
-        return false;
+    bool result = false; 
+
+    if (head) {
+        passedData = head->data;
+        Node* oldHead = head;
+        head = head->next;
+        delete oldHead;
+
+        if (!head) {
+            tail = nullptr;
+        }
+
+        result = true; 
     }
 
-    passedData = head->data;
-    Node* oldHead = head;
-    head = head->next;
-    delete oldHead;
-
-    if (!head) {
-        tail = nullptr;
-    }
-
-    return true;
+    return result;
 }
 
+
 bool FIFO::peek(Data& passedData) const {
-    if (!head) {
-        return false;
+    bool result = false; 
+
+    if (head) {
+        passedData = head->data;
+        result = true; 
     }
 
-    passedData = head->data;
-    return true;
+    return result;
+}
+
 }
 
 bool FIFO::isEmpty() const {
